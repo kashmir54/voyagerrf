@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>VoyagerRF Flasher</title>
+
+
+    	
+      <link rel="icon" type="image/png" href="/images/favicon.ico"/>
+      
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="/css/styles-2.scss" />
+      <link rel="stylesheet" href="/css/styles-1.css" />
+      <link rel="stylesheet" href="/css/w3.css">
+      
+      <script src="https://kit.fontawesome.com/92abc4d15c.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  </head>
+  <body>
+    <!-- Cabecera de la pagina -->
+    <header>
+      <nav>
+    		<div class="sticky top_menu">
+    			<div class="top">
+            
+    				<div><p class="logo_left title-2">VoyagerRF Flasher</p></div>
+            <div><img class="logo_right" src="/images/kashmir.png" alt="kashmir logo"/></div>
+            
+    			</div>
+    			<ul>
+    				<li class="left"><a class="" href="">VoyagerRF v1</a></li>
+            
+    			</ul>
+    		</div>
+
+    	</nav>
+    </header>
+
+
+
+    <body>
+      <div class="cont-dash">
+
+      <div class="title-cont">
+          <p class="title-2">Flash</h1>
+      </div>
+        <div id="main" style="">
+
+            <br>
+            <script
+                type="module"
+                src="https://unpkg.com/esp-web-tools@7.3.1/dist/web/install-button.js?module">
+            </script>
+            <esp-web-install-button id="installButton" manifest="webflash/manifest.json"></esp-web-install-button>
+            <br>
+            <span>NOTE: Make sure to close anything using your devices com port (e.g. Serial monitor)</span>
+        </div>
+        <div id="notSupported" style="display: none;">
+            Your browser does not support the Web Serial API. Try Chrome
+        </div>
+      </div>
+
+      <script>
+        if(navigator.serial){
+          document.getElementById("notSupported").style.display = 'none';
+          document.getElementById("main").style.display = 'block';
+        } else {
+          document.getElementById("notSupported").style.display = 'block';
+          document.getElementById("main").style.display = 'none';
+        }
+      </script>
+
+    </body>
+    
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>VoyagerRF</h6>
+            <p class="text-justify">VoyagerRF is a Multitool board based on ESP32C3 chip that allows users to expand Flipper Zero capabilities. It features: WiFi (2.4GHz), Bluetooth (BLE) on the ESP32C3 chip and nRF24 and CC1101 on the adapter connector. It comes with Marauder ESP32 by JustCallMeKoko, but other firmwares can be flashed in the board, such as standalone evilportal.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Information</h6>
+            <ul class="footer-links">
+              <li><a href="https://kashmir54.github.io/flipper/wifi/">VoyagerRF</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Other links</h6>
+            <ul class="footer-links">
+              <li><a href="">Buy</a></li>
+              <li><a href="https://kashmir54.github.io/flipper/wifi/#tutorials">Tutorials</a></li>
+              <li><a href="">Terms and conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by <a href="https://github.com/kashmir54/kashmir54.github.io">Kashmir54</a>.
+            </p>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12"> 
+            <a href="https://github.com/kashmir54/"><img src="/images/github.png" width="30"></a>
+            <a href="https://twitter.com/ManuSanchez54"><img src="/images/twitter.png" width="30"></a>
+            <a href="https://www.youtube.com/@Kashmir54"><img src="/images/youtube.png" width="30"></a>
+            
+            
+            
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
