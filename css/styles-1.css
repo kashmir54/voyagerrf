@@ -30,6 +30,11 @@
   grid-row-gap: 15px;
 }
 
+.btn-block {
+    display: block;
+    width: 90%;
+}
+
 
 h1{
   font-family: "Arial", Helvetica, sans-serif;
