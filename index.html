@@ -56,7 +56,6 @@
       </div>
       <br>
         <div id="main" style="">
-            <br>
             <script
                 type="module"
                 src="https://unpkg.com/esp-web-tools@7.3.1/dist/web/install-button.js?module">
@@ -82,13 +81,72 @@
               <div><p>Checkout changelog for release <a href="https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v0.13.4">v0.13.4</a></p></div>
             </div>
             
+            <div class="warning" id="notSupported" style="display: none;">
+              Your browser does not support the Web Serial API. Try Chrome
+            </div>
             
             <br>
-            <p>NOTE: Make sure to close anything using your devices COM port (e.g. Serial monitor)</p>
+
+            <div class="note">
+
+              <b>NOTES: Perform the update with the board disconnected from the Flipper. Optionally, remove the MicroSD card from the VoyagerRF. Make sure to close anything using your devices COM port (e.g. Serial monitor)</b>
+
+            </div>
+
+            <div class="title-cont">
+                <p class="title-2">Instructions</h1>
+            </div>
+
+            <div>
+              <b>Step 1.</b> Open the website and connect the board holding the ESP32C3 BOOT button (the one on the top with the "B" letter):
+                Boot button (press, hold, and connect while holding the button, then, release):
+
+                <p align="center">
+                  <img src="images/1_0_boot.png" width="60%"/>
+                </p>
+
+                Web interface:
+
+                <p align="center">
+                  <img src="images/1_0_flasher.png" width="80%"/>
+                </p>
+
+              <b>Step 2.</b> Select the version you want to flash and select the "USB JTAG/serial debug unit". The COM number can be different, so don't worry about that.
+
+              <p align="center">
+                <img src="images/1_1_connect.png" width="60%"/>
+              </p>
+
+              <b>Step 3.</b> Select "Install VoyagerRF Marauder vX.X.X".
+
+                <p align="center">
+                  <img src="images/1_2_install.png" width="60%"/>
+                </p>
+
+              <b>Step 4.</b> Hit next, doesn't matter if you erase the device, MicroSD card data will remain.
+
+                <p align="center">
+                  <img src="images/1_1_install.png" width="60%"/>
+                </p>
+
+              <b>Step 5.</b> Hit "Install" to perform the update.
+
+                <p align="center">
+                  <img src="images/1_3_install.png" width="60%"/>
+                </p>
+
+              <b>Step 6.</b> Wait for the process to finish. If successful, the following message will be displayed:
+
+              <p align="center">
+                <img src="images/1_4_done.png" width="60%"/>
+              </p>
+
+            <p>Now you can check the version in the reboot option in the ESP32 WiFi Marauder app in your Flipper!</p>
+
+            </div>
+
             <p>Powered by <a href="https://esphome.github.io/esp-web-tools/">ESP-Web-Tools</a>
-        </div>
-        <div id="notSupported" style="display: none;">
-            Your browser does not support the Web Serial API. Try Chrome
+
         </div>
       </div>
 

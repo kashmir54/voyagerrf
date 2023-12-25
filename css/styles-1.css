@@ -35,6 +35,27 @@
     width: 90%;
 }
 
+div.note{
+  border: solid #029b8a;
+  border-width: 3px;
+  background-color: #023832;
+  padding: 10px;
+}
+
+div.warning{
+  border: solid #ffc189;
+  border-width: 3px;
+  background-color: #cd7901;
+  padding: 10px;
+}
+
+div.error{
+  border: solid #F44100;
+  border-width: 3px;
+  background-color: #B02F00;
+  padding: 10px;
+}
+
 
 h1{
   font-family: "Arial", Helvetica, sans-serif;
