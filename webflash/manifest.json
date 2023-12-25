@@ -3,7 +3,7 @@
     "new_install_prompt_erase": true,
     "builds": [
       {
-        "chipFamily": "ESP32C3",
+        "chipFamily": "ESP32-C3",
         "parts": [
           { "path": "esp32_marauder.ino.bootloader.bin", "offset": 0 },
           { "path": "esp32_marauder.ino.partitions.bin", "offset": 32768 },
