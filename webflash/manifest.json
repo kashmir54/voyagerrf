@@ -1,4 +1,4 @@
-{
+[{
   "name": "VoyagerRF Marauder v0.13.6",
   "new_install_prompt_erase": true,
   "builds": [
@@ -87,4 +87,4 @@
       ]
     }
   ]
-}
+}]
