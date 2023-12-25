@@ -24,6 +24,11 @@
   grid-template-columns: 3fr 1fr;
 }
 
+.button-grid{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
 
 h1{
   font-family: "Arial", Helvetica, sans-serif;
