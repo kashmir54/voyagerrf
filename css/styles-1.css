@@ -26,7 +26,8 @@
 
 .button-grid{
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  grid-row-gap: 15px;
 }
 
 
@@ -683,7 +684,7 @@ form.pro_scan input[type=text]:focus {
   background-color: #e73e1f !important;
 }
 
-.bg-c,.Basic, .basic, .free-basic {
+.bg-c {
   color: #fff !important;
   background-color: #f28d2a !important;
 }
@@ -691,14 +692,37 @@ form.pro_scan input[type=text]:focus {
   color: #fff !important;
   background-color: #ebb636 !important;
 }
-.bg-a,.Advanced{
+.bg-a {
   color: #fff !important;
   background-color: #8db83e !important;
 }
-.bg-aa,.Pro, .pro  {
+.bg-aa {
   color: #fff !important;
   background-color: #20bcaf !important;
 }
+
+.bg-d:hover {
+  color: #fff !important;
+  background-color: #e73e1f !important;
+}
+.bg-c:hover {
+  color: #fff !important;
+  background-color: #d17c29 !important;
+}
+.bg-b:hover {
+  color: #fff !important;
+  background-color: #ebb636 !important;
+}
+.bg-a:hover{
+  color: #fff !important;
+  background-color: #769b33 !important;
+}
+.bg-aa:hover  {
+  color: #fff !important;
+  background-color: #1aa196 !important;
+}
+
+
 
 .cl-d {
   color: #e73e1f !important;
