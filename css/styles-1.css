@@ -44,6 +44,7 @@ div.note{
 }
 
 div.warning{
+  font-weight: bold;
   border: solid #ffc189;
   border-width: 3px;
   background-color: #cd7901;
