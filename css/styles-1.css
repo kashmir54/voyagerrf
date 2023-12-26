@@ -38,8 +38,9 @@
 div.note{
   border: solid #029b8a;
   border-width: 3px;
-  background-color: #023832;
+  background-color: #20bcaf;
   padding: 10px;
+  color: white;
 }
 
 div.warning{
@@ -383,13 +384,13 @@ a {
 
 
 body{
-  background-color: #FFFFFF;
   margin: 0;
-  font-family: 'Alef';font-size: 15px;
-  line-height: 2;
-  min-height: 100vh; 
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  padding: 0;
+  background: #151515 url("../images/bkg.png") 0 0;
+  color: #eaeaea;
+  line-height: 1.5;
+  font-family: Monaco,"Bitstream Vera Sans Mono"," Console",Terminal,monospace;
+  text-align: justify;
 }
 
 
