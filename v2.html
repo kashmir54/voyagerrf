@@ -70,8 +70,19 @@
         Your browser does not support the Web Serial API. Try Chrome instead. 
       </div>
         <div id="main" style="">
-            
-            <p class="title-2">Not yet available</h1>
+            <script
+                type="module"
+                src="https://unpkg.com/esp-web-tools@7.3.1/dist/web/install-button.js?module">
+            </script>
+            <div class="button-grid">
+              <div>
+                <esp-web-install-button id="installButton" manifest="webflash/v2/manifest_v0.13.6.json">
+                  <button class="btn bg-aa btn-block p-2 shadow" slot="activate">ESP32Marauder v0.13.6</button>
+                </esp-web-install-button>
+              </div>
+              <div><p>Checkout changelog for release <a href="https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v0.13.6">v0.13.6</a></p></div>
+
+            </div>
             
             <br><br><br>
 

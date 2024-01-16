@@ -1,0 +1,15 @@
+{
+  "name": "VoyagerRFv2 Marauder v0.13.6",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-C3",
+      "parts": [
+        { "path": "esp32_marauder.ino.bootloader.bin", "offset": 0 },
+        { "path": "esp32_marauder.ino.partitions.bin", "offset": 32768 },
+        { "path": "boot_app0.bin", "offset": 57344 },
+        { "path": "voyagerrf_marauder_v0_13_6_v2.bin", "offset": 65536 }
+      ]
+    }
+  ]
+}
