@@ -24,10 +24,24 @@
   grid-template-columns: 3fr 1fr;
 }
 
+.double-button{
+  display: flex;
+  width: 100%;
+  gap:10px;
+}
+
+.btn-main{
+  width: 66%;
+}
+
+.btn-sec{
+  width: 25%;
+}
+
 .button-grid{
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-row-gap: 15px;
+  grid-row-gap: 25px;
 }
 
 .btn-block {
@@ -245,13 +259,13 @@ p.cien{
 /***************************** NAV ************************************/
 
 header ul{
-  list-style-type: none;
-  position: relative;
-  padding-left: 3%;
+	list-style-type: none;
+	position: relative;
+	padding-left: 3%;
   padding-right: 3%;
-  margin: 0;
-  overflow: hidden;
-  background-color: #333;
+	margin: 0;
+	overflow: hidden;
+	background-color: #333;
 }
 
 .left {
@@ -384,7 +398,7 @@ a {
 body{
   margin: 0;
   padding: 0;
-  background: #151515;
+  background: #151515 url("../images/bkg.png") 0 0;
   color: #eaeaea;
   line-height: 1.5;
   font-family: Monaco,"Bitstream Vera Sans Mono"," Console",Terminal,monospace;
@@ -421,7 +435,7 @@ div.cont{
 div.cont-dash{
   margin: auto;
   margin-top: 0;
-  width: 92%;
+  width: 75%;
   margin-bottom: 2em;
 }
 
@@ -1137,5 +1151,15 @@ label.check{
     display:block;
     margin-right:0;
     font-weight:600
+  }
+}
+
+
+@media only screen and (max-width:600px){
+  div.cont-dash{
+    margin: auto;
+    margin-top: 0;
+    width: 95%;
+    margin-bottom: 2em;
   }
 }
