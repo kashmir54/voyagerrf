@@ -75,11 +75,14 @@
                 src="https://unpkg.com/esp-web-tools@7.3.1/dist/web/install-button.js?module">
             </script>
             <div class="button-grid">
-              <div>
-                <esp-web-install-button id="installButton" manifest="webflash/v2/manifest_v0.13.6.json">
-                  <button class="btn bg-aa btn-block p-2 shadow bold" slot="activate">ESP32Marauder v0.13.6</button>
-                </esp-web-install-button>
-              </div>
+              <div class="double-button">
+                  <esp-web-install-button class="btn-main" id="installButton" manifest="webflash/v2/manifest_v0.13.6.json">
+                    <button class="btn bg-aa btn-block p-2 shadow bold" slot="activate">ESP32Marauder v0.13.6</button>
+                  </esp-web-install-button>
+                  <esp-web-install-button class="btn-sec" id="installButton" manifest="webflash/v2/manifest_usbc_v0.13.6.json">
+                    <button class="btn bg-aa btn-block p-2 shadow bold" slot="activate">USBC Serial</button>
+                  </esp-web-install-button>
+                </div>
               <div><p><b>Latest release.</b> Checkout changelog for release <a href="https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v0.13.6">v0.13.6</a></p></div>
 
             </div>
