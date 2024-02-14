@@ -63,7 +63,8 @@
           <p class="title-2">Flash VoyagerRFv1</h1>
       </div>
       <div>
-        <p>Choose the different versions to install on your <a href="https://kashmir54.github.io/flipper/wifi/">VoyagerRFv1 board</a>. Do NOT use USBC Serial option since it won't work with the flipper, only with the USCB Serial Monitor. Also, read the changelog from <a href="https://github.com/justcallmekoko/ESP32Marauder">JustCallMeKoko</a> to see what's new in the firmware. Updates for other boards and functionalities do not apply to the VoyagerRF for obvious reasons, only WiFi and BLE functionalities are available.</p>
+        <p>Choose the different versions to install on your <a href="https://kashmir54.github.io/flipper/wifi/">VoyagerRFv1 board</a>. Also, read the changelog from <a href="https://github.com/justcallmekoko/ESP32Marauder">JustCallMeKoko</a> to see what's new in the firmware. Updates for other boards and functionalities do not apply to the VoyagerRF for obvious reasons, only WiFi and BLE functionalities are available.</p>
+        <p>The USBC Serial option is for test/flash your board/Xiao-ESP32C3 using the ESP web console. This USBC Serial will stop the GPIO pins transmission and it will only work via USBC with the PC. You can always go back to the non USBC Serial version of the firmware.</p>
       </div>
       <br>
       <div class="warning" id="notSupported" style="display: none;">
@@ -75,23 +76,38 @@
                 src="https://unpkg.com/esp-web-tools@9.4.3/dist/web/install-button.js?module">
             </script>
             <div class="button-grid">
+
               <div>
                 <div class="double-button">
-                  <esp-web-install-button class="btn-main" id="installButton" manifest="webflash/v1/manifest_v0.13.6.json">
-                    <button class="btn bg-aa btn-block p-2 shadow bold" slot="activate">ESP32Marauder v0.13.6</button>
+                  <esp-web-install-button class="btn-main" id="installButton" manifest="webflash/v1/manifest_v0.13.7.json">
+                    <button class="btn bg-aa btn-block p-2 shadow bold" slot="activate">ESP32Marauder v0.13.7</button>
                   </esp-web-install-button>
-                  <esp-web-install-button class="btn-sec" id="installButton" manifest="webflash/v1/manifest_usbc_v0.13.6.json">
+                  <esp-web-install-button class="btn-sec" id="installButton" manifest="webflash/v1/manifest_v0.13.7_serial.json">
                     <button class="btn bg-aa btn-block p-2 shadow bold" slot="activate">USBC Serial</button>
                   </esp-web-install-button>
                 </div>
               </div>
-              <div><p><b>Latest release.</b> Checkout changelog for release <a href="https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v0.13.6">v0.13.6</a></p></div>
+              <div><p><b>Latest release.</b> Checkout changelog for release <a href="https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v0.13.7">v0.13.7</a></p></div>
+              
+              <div>
+                <div class="double-button">
+                  <esp-web-install-button class="btn-main" id="installButton" manifest="webflash/v1/manifest_v0.13.6.json">
+                    <button class="btn bg-a btn-block p-2 shadow bold" slot="activate">ESP32Marauder v0.13.6</button>
+                  </esp-web-install-button>
+                  <esp-web-install-button class="btn-sec" id="installButton" manifest="webflash/v1/manifest_v0.13.6_serial.json">
+                    <button class="btn bg-a btn-block p-2 shadow bold" slot="activate">USBC Serial</button>
+                  </esp-web-install-button>
+                </div>
+              </div>
+              <div><p>Checkout changelog for release <a href="https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v0.13.6">v0.13.6</a></p></div>
+
               <div>
                 <esp-web-install-button id="installButton" manifest="webflash/v1/manifest_v0.13.5.json">
-                  <button class="btn bg-a btn-block p-2 shadow bold" slot="activate">ESP32Marauder v0.13.5</button>
+                  <button class="btn bg-c btn-block p-2 shadow bold" slot="activate">ESP32Marauder v0.13.5</button>
                 </esp-web-install-button>
               </div>
               <div><p>Checkout changelog for release <a href="https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v0.13.5">v0.13.5</a></p></div>
+              
               <div>
                 <esp-web-install-button id="installButton" manifest="webflash/v1/manifest_v0.13.4.json">
                   <button class="btn bg-c btn-block p-2 shadow bold" slot="activate">ESP32Marauder v0.13.4</button>
@@ -106,7 +122,7 @@
 
             <div class="note">
 
-              <b>NOTES: Perform the update with the board disconnected from the Flipper. Optionally, remove the MicroSD card from the VoyagerRF. Make sure to close anything using your device's COM port (e.g. Serial monitor)</b>
+              <b>NOTES: Perform the update with the board disconnected from the Flipper. Optionally, remove the MicroSD card from the VoyagerRF. Make sure to close anything using your device's COM port (e.g. Serial monitor), i.e. close another webflashers connected to the board.</b>
 
             </div>
 
