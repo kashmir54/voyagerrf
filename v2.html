@@ -68,7 +68,7 @@
       </div>
       <br>
       <div class="warning" id="notSupported" style="display: none;">
-        Your browser does not support the Web Serial API. Try Chrome instead. 
+        Your browser does not support the Web Serial API. Try Chrome in your PC instead. 
       </div>
         <div id="main" style="">
             <script
@@ -78,23 +78,35 @@
             <div class="button-grid">
               <div>
                 <div class="double-button">
-                  <esp-web-install-button class="btn-main" id="installButton" manifest="webflash/v2/manifest_v0.13.7.json">
-                    <button class="btn bg-aa btn-block p-2 shadow bold" slot="activate">ESP32Marauder v0.13.7</button>
+                  <esp-web-install-button class="btn-main" id="installButton" manifest="webflash/v2/manifest_v0.13.8.json">
+                    <button class="btn bg-aa btn-block p-2 shadow bold" slot="activate">ESP32Marauder v0.13.8</button>
                   </esp-web-install-button>
-                  <esp-web-install-button class="btn-sec" id="installButton" manifest="webflash/v2/manifest_v0.13.7_serial.json">
+                  <esp-web-install-button class="btn-sec" id="installButton" manifest="webflash/v2/manifest_v0.13.8_serial.json">
                     <button class="btn bg-aa btn-block p-2 shadow bold" slot="activate">USBC Serial</button>
                   </esp-web-install-button>
                 </div>
               </div>
-              <div><p><b>Latest release.</b> Checkout changelog for release <a href="https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v0.13.7">v0.13.7</a></p></div>
+              <div><p><b>Latest release.</b> Checkout changelog for release <a href="https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v0.13.8">v0.13.8</a></p></div>
+
+              <div>
+                <div class="double-button">
+                  <esp-web-install-button class="btn-main" id="installButton" manifest="webflash/v2/manifest_v0.13.7.json">
+                    <button class="btn bg-a btn-block p-2 shadow bold" slot="activate">ESP32Marauder v0.13.7</button>
+                  </esp-web-install-button>
+                  <esp-web-install-button class="btn-sec" id="installButton" manifest="webflash/v2/manifest_v0.13.7_serial.json">
+                    <button class="btn bg-a btn-block p-2 shadow bold" slot="activate">USBC Serial</button>
+                  </esp-web-install-button>
+                </div>
+              </div>
+              <div><p>Checkout changelog for release <a href="https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v0.13.7">v0.13.7</a></p></div>
               
               <div>
                 <div class="double-button">
                   <esp-web-install-button class="btn-main" id="installButton" manifest="webflash/v2/manifest_v0.13.6.json">
-                    <button class="btn bg-a btn-block p-2 shadow bold" slot="activate">ESP32Marauder v0.13.6</button>
+                    <button class="btn bg-c btn-block p-2 shadow bold" slot="activate">ESP32Marauder v0.13.6</button>
                   </esp-web-install-button>
                   <esp-web-install-button class="btn-sec" id="installButton" manifest="webflash/v2/manifest_v0.13.6_serial.json">
-                    <button class="btn bg-a btn-block p-2 shadow bold" slot="activate">USBC Serial</button>
+                    <button class="btn bg-c btn-block p-2 shadow bold" slot="activate">USBC Serial</button>
                   </esp-web-install-button>
                 </div>
               </div>
