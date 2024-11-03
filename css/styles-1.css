@@ -8,6 +8,41 @@
 
 }
 
+
+.double{
+  display: grid;
+  grid-template-columns: 1fr 0fr 1fr;
+  grid-column-gap: 40px;
+}
+
+.vertical-line { 
+  width: 2px; 
+  border-left: 2px solid white; 
+  height: 100%; 
+  float: left; 
+} 
+
+
+div.grid-post{
+  display: grid;
+  column-gap: 1em;
+  row-gap: 3.125em;
+  grid-template-columns: 1fr 4fr;
+}
+
+div.grid-post-big{
+  display: grid;
+  column-gap: 1.5em;
+  row-gap: 3.125em;
+  grid-template-columns: 1fr 3fr;
+}
+
+img.blog-thumb{
+  margin-left: 10px;
+  width: 90%;
+}
+
+
 .vera{
   font-family: "VeraMoBI";
   color: #43CAB2;
@@ -25,9 +60,9 @@
 }
 
 .double-button{
-  display: flex;
-  width: 100%;
-  gap:10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 25px;
 }
 
 .btn-main{
@@ -185,7 +220,7 @@ p.title-2{
 }
 
 p.title-3{
-  color: black;
+  color: #43CAB2;
   font-family: "Trebuchet MS", Tahoma, sans-serif;
   font-size: 30px;
   font-style: italic;
