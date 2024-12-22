@@ -1,5 +1,5 @@
 {
-  "name": "VoyagerRF Micro Marauder v1.0. (USBC Serial)",
+  "name": "VoyagerRF Marauder v1.2.0",
   "new_install_prompt_erase": true,
   "builds": [
     {
@@ -8,7 +8,7 @@
         { "path": "esp32_marauder.ino.bootloader.bin", "offset": 0 },
         { "path": "esp32_marauder.ino.partitions.bin", "offset": 32768 },
         { "path": "boot_app0.bin", "offset": 57344 },
-        { "path": "voyagerrf_marauder_v1_0_0_micro_serial.bin", "offset": 65536 }
+        { "path": "voyagerrf_marauder_v1_2_0.bin", "offset": 65536 }
       ]
     }
   ]
