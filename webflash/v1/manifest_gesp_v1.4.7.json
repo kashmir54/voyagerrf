@@ -1,0 +1,15 @@
+{
+  "name": "VoyagerRFv1 Ghost_ESP VA1.4.7",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-C3",
+      "parts": [
+        { "path": "bootloader.bin", "offset": 0 },
+        { "path": "partition-table.bin", "offset": 32768 },
+        { "path": "boot_app0.bin", "offset": 57344 },
+        { "path": "Ghost_ESP_IDF_v1.4.7.bin", "offset": 65536 }
+      ]
+    }
+  ]
+}
