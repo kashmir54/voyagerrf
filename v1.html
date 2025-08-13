@@ -14,7 +14,7 @@
 
         gtag('config', 'G-BWT408TBEN');
       </script>
-    	
+      
       <link rel="icon" type="image/png" href="images/favicon.ico"/>
       
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -37,21 +37,21 @@
     <!-- Cabecera de la pagina -->
     <header>
       <nav>
-    		<div class="sticky top_menu">
-    			<div class="top">
+        <div class="sticky top_menu">
+          <div class="top">
             
-    				<div><p class="logo_left title-2">VoyagerRF Web Flasher</p></div>
+            <div><p class="logo_left title-2">VoyagerRF Web Flasher</p></div>
             <div><img class="logo_right" src="images/kashmir.png" alt="kashmir logo"/></div>
             
-    			</div>
-    			<ul>
-    				<li class="left"><a class="" href="index.html">VoyagerRFv1</a></li>
-            <li class="left"><a class="current" href="#">VoyagerRFv2 / Micro / Pro</a></li>
+          </div>
+          <ul>
+            <li class="left"><a class="current" href="#">VoyagerRFv1</a></li>
+            <li class="left"><a class="" href="index.html">VoyagerRFv2 / Micro / Pro</a></li>
             
-    			</ul>
-    		</div>
+          </ul>
+        </div>
 
-    	</nav>
+      </nav>
     </header>
 
 
@@ -60,20 +60,15 @@
       <div class="cont-dash">
 
       <div class="title-cont">
-          <p class="title-2">VoyagerRFv2 / Micro / Pro - Web Flasher</h1>
+          <p class="title-2">VoyagerRFv1 - Web Flasher</h1>
       </div>
-
       <div>
+        <p>Welcome to VoyagerRF web flasher! This tool was created to smooth the flashing process of the ESP32C3 based boards for the Flipper. Currently, I'm preparing the builds for two firmwares, Marauder and Ghost_ESP. Bear in mind that these firmwares are community developed, so there might be bugs. Be patience as awesome people are working on them. Choose the different firmwate to install on your <a href="https://kashmir54.github.io/flipper/wifi/">VoyagerRFv1 board</a>. Also, read the changelog from <a href="https://github.com/justcallmekoko/ESP32Marauder">JustCallMeKoko's ESP32Marauder</a> and <a href="https://github.com/Spooks4576/Ghost_ESP">Spooks4576's Ghost_ESP</a> to see what's new in the firmware. Updates for other boards and functionalities do not apply to the VoyagerRFs for obvious reasons, only WiFi and BLE functionalities are available.</p>
+        <p>Remember to use the latest version of the apps in the Flipper, as new releases come with changes that might require it.</p>
 
-        <p>Welcome to VoyagerRF web flasher! This tool was created to smooth the flashing process of the ESP32C3 based boards for the Flipper. Currently, I'm preparing the builds for two firmwares, Marauder and Ghost_ESP. Bear in mind that these firmwares are community developed, so there might be bugs. Be patience as awesome people are working on them. Choose the different firmwate to install on your <a href="https://kashmir54.github.io/flipper/voyagerrf_v2/">VoyagerRFv2 board</a>, <a href="https://kashmir54.github.io/flipper/voyagerrf_pro/">VoyagerRF Pro</a> or the <a href="https://kashmir54.github.io/flipper/voyagerrf_micro/">VoyagerRF Micro</a>. Also, read the changelog from <a href="https://github.com/justcallmekoko/ESP32Marauder">JustCallMeKoko's ESP32Marauder</a> and <a href="https://github.com/Spooks4576/Ghost_ESP">Spooks4576's Ghost_ESP</a> to see what's new in the firmware. Updates for other boards and functionalities do not apply to the VoyagerRFs for obvious reasons, only WiFi, BLE, LED and GPS functionalities are available.</p>
-        <p>Remember!! Use the latest version of the apps (.fap) in the Flipper, as new releases come with changes that might require it.</p>
-
-        
       </div>
-
-      <br><br>
-      
-      <div id="main" style="">
+      <br>
+        <div id="main" style="">
 
         <div class="warning" id="notSupported" style="display: none;">
           Your browser does not support the Web Serial API. Try Google Chrome browser in your PC instead. 
@@ -94,9 +89,8 @@
               </div>
               <div>
                 <p class="title-3">ESP32Marauder</p>
-                <p><i>The almighty</i></p>
                 <p>A suite of WiFi/Bluetooth offensive and defensive tools for the ESP32. By <a href="https://github.com/justcallmekoko/ESP32Marauder">JustCallMeKoko</a>!! 🔫</p>
-                <p>Find out the latest .fap Flipper application file at <a href="https://github.com/0xchocolate/flipperzero-wifi-marauder/releases/">0xchocolate GitHub's repo</a>.</p>
+                <p>Find out the latest .fap Flipper application file at <a href="https://github.com/0xchocolate/flipperzero-wifi-marauder/releases">0xchocolate GitHub's repo</a>.</p>
               </div>
             </div>
 
@@ -104,12 +98,12 @@
 
             <div class="double-button">
               <div>
-                  <esp-web-install-button class="btn-main" id="installButton" manifest="webflash/v2/manifest_v1.7.0.json">
-                    <button class="btn bg-aa btn-block p-2 shadow bold" slot="activate">ESP32Marauder v1.7.0</button>
+                  <esp-web-install-button class="btn-main" id="installButton" manifest="webflash/v1/manifest_v1.8.4.json">
+                    <button class="btn bg-aa btn-block p-2 shadow bold" slot="activate">ESP32Marauder v1.8.4</button>
                   </esp-web-install-button>
               </div>
               <div>
-                <p><b>Latest release.</b> Checkout changelog for release <a href="https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.7.0">v1.7.0</a></p>
+                <p><b>Latest release.</b> Checkout changelog for release <a href="https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.8.4">v1.8.4</a></p>
               </div>
             </div>
 
@@ -119,26 +113,26 @@
 
             <div class="double-button">
               <div>
-                  <esp-web-install-button class="btn-main" id="installButton" manifest="webflash/v2/manifest_v1.5.0.json">
-                    <button class="btn bg-a btn-block p-2 shadow bold" slot="activate">ESP32Marauder v1.5.0</button>
+                  <esp-web-install-button class="btn-main" id="installButton" manifest="webflash/v1/manifest_v1.2.0.json">
+                    <button class="btn bg-a btn-block p-2 shadow bold" slot="activate">ESP32Marauder v1.2.0</button>
                   </esp-web-install-button>
               </div>
               <div>
-                <p>Checkout changelog for release <a href="https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.5.0">v1.5.0</a></p>
+                <p><b>Latest release.</b> Checkout changelog for release <a href="https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.2.0">v1.2.0</a></p>
               </div>
             </div>
 
             <div class="double-button">
               <div>
-                  <esp-web-install-button class="btn-main" id="installButton" manifest="webflash/v2/manifest_v1.2.0.json">
-                    <button class="btn bg-c btn-block p-2 shadow bold" slot="activate">ESP32Marauder v1.2.0</button>
+                  <esp-web-install-button class="btn-main" id="installButton" manifest="webflash/v1/manifest_v1.0.0.json">
+                    <button class="btn bg-c btn-block p-2 shadow bold" slot="activate">ESP32Marauder v1.0.0</button>
                   </esp-web-install-button>
               </div>
               <div>
-                <p>Checkout changelog for release <a href="https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.2.0">v1.2.0</a></p>
+                <p>Checkout changelog for release <a href="https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.0.0">v1.0.0</a></p>
               </div>
             </div>
-            
+
           </div>
 
           <div class="vertical-line"></div>
@@ -161,32 +155,32 @@
             <hr>
 
             <p><b>Old releases:</b></p>
-            
+
             <div class="double-button">
               <div>
-                  <esp-web-install-button class="btn-main" id="installButton" manifest="webflash/v2/manifest_gesp_v1.4.7.json">
+                  <esp-web-install-button class="btn-main" id="installButton" manifest="webflash/v1/manifest_gesp_v1.4.7.json">
                     <button class="btn bg-aa btn-block p-2 shadow bold" slot="activate">Ghost_ESP VA1.4.7</button>
                   </esp-web-install-button>
               </div>
               <div>
-                <p>Checkout changelog for release <a href="https://github.com/Spooks4576/Ghost_ESP/releases/tag/VA1.4.7">VA1.4.7</a></p>
+                <p><b>Latest release.</b> Checkout changelog for release <a href="https://github.com/Spooks4576/Ghost_ESP/releases/tag/VA1.4.7">VA1.4.7</a></p>
               </div>
             </div>
-
+            
             <div class="double-button">
               <div>
-                  <esp-web-install-button class="btn-main" id="installButton" manifest="webflash/v2/manifest_gesp_v1.4.5.json">
+                  <esp-web-install-button class="btn-main" id="installButton" manifest="webflash/v1/manifest_gesp_v1.4.5.json">
                     <button class="btn bg-a btn-block p-2 shadow bold" slot="activate">Ghost_ESP VA1.4.5</button>
                   </esp-web-install-button>
               </div>
               <div>
-                <p>Checkout changelog for release <a href="https://github.com/Spooks4576/Ghost_ESP/releases/tag/VA1.4.5">VA1.4.5</a></p>
+                <p><b>Latest release.</b> Checkout changelog for release <a href="https://github.com/Spooks4576/Ghost_ESP/releases/tag/VA1.4.5">VA1.4.5</a></p>
               </div>
             </div>
 
             <div class="double-button">
               <div>
-                  <esp-web-install-button class="btn-main" id="installButton" manifest="webflash/v2/manifest_gesp_v1.4.3.json">
+                  <esp-web-install-button class="btn-main" id="installButton" manifest="webflash/v1/manifest_gesp_v1.4.3.json">
                     <button class="btn bg-c btn-block p-2 shadow bold" slot="activate">Ghost_ESP VA1.4.3</button>
                   </esp-web-install-button>
               </div>
@@ -195,14 +189,11 @@
               </div>
             </div>
 
+
           </div>
-        
-
-      </div>
+        </div>
+      </div> 
             
-              
-
-            </div>
             
             <br><br><br>
 
@@ -223,6 +214,21 @@
             <br><hr>
 
             <div class="title-cont">
+                <p class="title-2">Schema</h1>
+            </div>
+
+            <p>Flash the USCB Serial if you want to use the board via the USBC serial with this web tool or with another serial monitor on your PC. With this option, <b>your VoyagerRF board won't work in the flipper </b>(the serial monitor is only available on USBC, not in the TX/RX pins).</p>
+
+            <p>If you want to make your own Xiao ESP32-C3 experiments and you want to use this WebFlasher, you can hook your MicroSD card slot like depicted in the following schema:</p>
+
+            <br>
+            <p align="center">
+              <img src="images/schema.png" width="40%"/>
+            </p>
+
+            <br>
+
+            <div class="title-cont">
                 <p class="title-2">Instructions</h1>
             </div>
 
@@ -231,7 +237,7 @@
                 Boot button (press, hold, and connect while holding the button, then, release):</p>
 
                 <p align="center">
-                  <img src="images/boot.png" width="50%"/>
+                  <img src="images/1_0_boot.png" width="50%"/>
                 </p><br>
 
 
@@ -266,23 +272,10 @@
               </p>
 
             <p>Now you can check the version in the reboot option in the ESP32 WiFi Marauder app in your Flipper!</p>
+
             </div>
 
-          <br>
-
-          <p>The USBC Serial option is for test/flash your board/Xiao-ESP32C3 using the ESP web console. This USBC Serial will stop the GPIO pins transmission and it will only work via USBC with the PC. You can always go back to the non USBC Serial version of the firmware.</p>
-
-          <br>
-
-          <esp-web-install-button class="btn-sec" id="installButton" manifest="webflash/v2/manifest_v1.0.0_serial.json">
-            <button class="btn bg-aa btn-block p-2 shadow bold" slot="activate">ESP32Marauder v1.0.0 USBC Serial</button>
-          </esp-web-install-button>
-
         </div>
-
-        
-
-
       </div>
 
       <script>
@@ -302,7 +295,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-6">
             <h6>VoyagerRF</h6>
-            <p class="text-justify">VoyagerRFs boards are a Multitool board based on ESP32C3 chip that allows users to expand Flipper Zero capabilities. It features: WiFi (2.4GHz), Bluetooth (BLE) on the ESP32C3 chip. New versions (v2 and Micro) also includes GPS and NeoPixel LED.</p>
+            <p class="text-justify">VoyagerRF is a Multitool board based on ESP32C3 chip that allows users to expand Flipper Zero capabilities. It features: WiFi (2.4GHz), Bluetooth (BLE) on the ESP32C3 chip and nRF24 and CC1101 on the adapter connector. It comes with Marauder ESP32 by JustCallMeKoko, but other firmwares can be flashed in the board, such as standalone evilportal.</p>
           </div>
 
           <div class="col-xs-6 col-md-3">
